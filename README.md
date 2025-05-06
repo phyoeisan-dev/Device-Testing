@@ -23,7 +23,8 @@ This project is focused on testing the following libraries with Progressive Web 
 2. Install dependencies:
   ```bash
   npm install
-  ```
+  ```build asp.net core web api project in visual studio and copy file under aspdonetcorewebapi for geting pdf file
+
 
 3. Run the application:
   ```bash
