@@ -1,37 +1,37 @@
-# PDFViewerApp
+# Device Testing
 
-PDFViewerApp is a Progressive Web Application (PWA) designed to provide seamless PDF viewing and printing capabilities. It leverages the EJS PDF Viewer for rendering PDF documents and integrates with ESC/POS printers for efficient printing. Built using C# and Angular, this application ensures a responsive and user-friendly experience across devices.
+This project is focused on testing the following libraries with Progressive Web App (PWA) functionality:
 
+- [`@syncfusion/ej2-angular-pdfviewer`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer): A PDF viewer component for Angular.
+- [`@zxing/ngx-scanner`](https://www.npmjs.com/package/@zxing/ngx-scanner): A barcode scanner library for Angular.
+- [`ngx-webcam`](https://www.npmjs.com/package/ngx-webcam): A webcam integration library for Angular.
+- [`@angular/pwa`](https://angular.io/guide/service-worker-intro): Provides support for adding Progressive Web App capabilities to Angular applications.
 ## Features
-- View PDF documents directly in the browser.
-- Print PDFs using ESC/POS-compatible printers.
-- Responsive design for desktop and mobile devices.
-- Offline support through PWA functionality.
 
-## Installation
+- **PDF Viewing**: Test the rendering and functionality of PDF documents using Syncfusion's PDF viewer.
+- **Barcode and QR Scanning**: Validate barcode scanning capabilities using ZXing's Angular scanner.
+- **Webcam Integration**: Test webcam functionalities using the ngx-webcam library.
+
+## Getting Started
+
 1. Clone the repository:
   ```bash
-  git clone https://github.com/phyoeisan-dev/PDFViewerApp.git
+  git clone  https://github.com/phyoeisan-dev/PDFViewerApp.git
+  cd device-testing
   ```
-2. Navigate to the project directory:
-  ```bash
-  cd PDFViewerApp
-  ```
-3. Install dependencies and build the project:
-  ```bash
-  @syncfusion/ej2-angular-pdfviewer
-  @angular/pwa
-  build asp.net core web api project in visual studio and copy file under aspdonetcorewebapi
-  ```
-  ```
-1. Open your browser and navigate to `http://localhost:4200`.
-2. Upload a PDF file to view and print.
 
-## Requirements
-- Compatible ESC/POS printer
+2. Install dependencies:
+  ```bash
+  npm install
+  ```
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+3. Run the application:
+  ```bash
+  ng serve
+  ```
+
+4. Access the app in your browser at `http://localhost:4200`.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License.
