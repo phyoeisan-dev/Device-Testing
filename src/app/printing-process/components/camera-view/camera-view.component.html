@@ -1,0 +1,26 @@
+<section class="content mt-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="row container mt-2 text-center">
+        <div *ngIf="this.img===false">
+          <webcam
+            [trigger]="invokeObservable"
+            (imageCapture)="captureImg($event)"
+            [height]="400"
+            [width]="400">
+          </webcam>
+        </div>
+        <div class="text-center" *ngIf="flag===false">
+          <div id="results">Your taken image here...</div>
+          <img [src]="this.sysImage" height="400px" class="text-center" />
+        </div>
+        <br/>
+        <div class="col-md-12">
+          <button class="btn btn-secondary"  (click)="getSnapshot()" style="margin: 5px;">
+            Capture
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

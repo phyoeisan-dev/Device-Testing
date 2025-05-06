@@ -1,0 +1,37 @@
+
+<style>
+  .control-section{
+      margin-top: 100px;
+  }
+
+  </style>
+  <div class="control-section">
+      <div class="content-wrapper">
+          <div class="flex-container">
+              <label class="switchLabel" for="checked">Standalone PDF Viewer</label>
+              <div class="e-message render-mode-info">
+                  <span class="e-msg-icon render-mode-info-icon" title="Turn OFF to render the PDF Viewer as server-backed"></span>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 col-6"></div>
+            <button (click)="printPDF()" class="col-lg-1 col-4 btn btn-sm btn-light my-1"><i class="fa-solid fa-print"></i>&nbsp;Print</button>
+          </div>
+          <!-- <ejs-pdfviewer #pdfviewer
+           [documentPath]='document'
+           [resourceUrl]='resource'
+           [enableToolbar]="false"
+           [enablePrint]="true"
+           [enableDesktopMode]="true">
+        </ejs-pdfviewer> -->
+        <ejs-pdfviewer #pdfviewer
+           [documentPath]='document'
+           [resourceUrl]='resource'
+           [enableToolbar]="true"
+           [enablePrint]="true"
+           [enableDesktopMode]="true">
+        </ejs-pdfviewer>
+      </div>
+  </div>
+
+
